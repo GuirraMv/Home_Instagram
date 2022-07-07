@@ -76,7 +76,7 @@ body {
     height: 717px;
 }
 
-.carousel{
+.transicao{
     margin-left: 255px;
     margin-top: 32px;
     position: absolute;
@@ -84,6 +84,46 @@ body {
     width: 300px;
 }
 
-.carousel-item img{
+.transicao img {
+    position: absolute;
     height: 457px;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+.transicao img.imagetwo {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+.transicao img.imagethree {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+.transicao img.imagefour {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes fadeInOut {
+    0% {opacity:1;}
+    17% {opacity:1;}
+    25% {opacity:0;}
+    92% {opacity:0;}
+}
+
+.transicao img:nth-of-type(4) {
+    animation-delay: 2s;
 }

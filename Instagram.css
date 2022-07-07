@@ -85,11 +85,11 @@ body {
 }
 
 .transicao > img { 
-    height: 457px;
+    height: 451px;
     position: absolute;
-    color: solid;
+    color: transparent;
     opacity: 0;
-    z-index: 0;
+    z-index: 1;
     animation: imageAnimation 16s linear infinite 0s; 
 }
 

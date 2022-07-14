@@ -13,8 +13,16 @@ body {
     width: 100%;
     height: 100%;
 }
-.login {
+
+.containers {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    height: 396px;
+}
+
+.login {
     margin-top: 148px;
     padding-top: 30px;
     margin-right: 90px;
@@ -90,24 +98,22 @@ body {
     color: transparent;
     opacity: 0;
     z-index: 1;
-    animation: imageAnimation 10s linear infinite 0s; 
+    animation: imageAnimation 9s linear infinite 0s; 
 }
 
 .transicao > img:nth-child(1)  {
-    animation-delay: 3.2s; 
+    animation-delay: 3.9s; 
 }
 .transicao > img:nth-child(2) {
-    animation-delay: 5.6s; 
+    animation-delay: 6s; 
 }
 .transicao > img:nth-child(3) {
-    animation-delay: 8.4s; 
+    animation-delay: 8s; 
 }
 
 .transicao > img:nth-child(4) {
-    animation-delay: 10.9s;
+    animation-delay: 10.4s;
 }
-
-
 
 @keyframes imageAnimation { 
     0% { opacity: 0;
@@ -117,4 +123,44 @@ body {
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
+}
+
+.remover {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.trocar {
+    display: flex;
+    align-items: center;
+    margin: 0 5px 16px 0;
+    width: 360px;
+    background-color: #FFF;
+    border: #c2c2c2 solid 1px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.trocar p {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.obter {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.apps img {
+    width: 120px;
 }
